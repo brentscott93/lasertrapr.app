@@ -4,19 +4,10 @@ aliases:
 - about-hugo
 - contact
 author:
-  name: Hugo Authors
-date: "2014-04-09"
+  name: Brent Scott
+date: "2021-05-17"
 title: About
 ---
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
+This is **lasertrapr** - an application for automating the analysis of laser trap data. You can learn how how to download, install, and use the app by reading the [online documentation](/documentation). You can also check out the source code and contribute to the app on [GitHub](https://github.com/brentscott93/lasertrapr.app). 
 
-It makes use of a variety of open source projects including:
-
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).

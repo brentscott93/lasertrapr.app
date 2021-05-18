@@ -1,5 +1,5 @@
-baseURL = "https://example.com"
-title   = "Hello Friend NG"
+baseURL = "https://lasertrapr.app"
+title   = "lasertrapr"
 languageCode = "en-us"
 theme = "hugo-theme-hello-friend-ng"
 
@@ -37,7 +37,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "Brent Scott"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -55,13 +55,13 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   # 
-  description = "Nice theme for homepages and blogs"
-  keywords = ""
+  description = "Automated analysis of laser trap data"
+  keywords = "laser trap, analysis"
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "Automated analysis of laser trap data"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -80,7 +80,7 @@ disableHugoGeneratorInject = false
   # Per default, this option is off. 
   # The theme is respecting the prefers-color-scheme of the operating systeme. 
   # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
@@ -105,13 +105,13 @@ disableHugoGeneratorInject = false
   #
   [params.footer]
     trademark = true
-    rss = true
-    copyright = true
+    rss = false
+    copyright = false
     author = true
 
     topText = []
-    bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-            "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"]
+  #  bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+   #         "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"]
 
   # Colors for favicons
   #
@@ -122,7 +122,7 @@ disableHugoGeneratorInject = false
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /home/"
+    logoText     = "$ cd ~/lasertrapr/"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -150,43 +150,39 @@ disableHugoGeneratorInject = false
   #   maxWidth = "50px"
 
   # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
+  #[[params.social]]
+   # name = "twitter"
+#    url  = "https://twitter.com/"
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:nobody@example.com"
+ # [[params.social]]
+  #  name = "email"
+   # url  = "mailto:nobody@example.com"
 
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/"
+#  [[params.social]]
+ #   name = "github"
+  #  url  = "https://github.com/"
 
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/"
+  #[[params.social]]
+   # name = "linkedin"
+    #url  = "https://www.linkedin.com/"
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+#  [[params.social]]
+ #   name = "stackoverflow"
+  #  url  = "https://www.stackoverflow.com/"
 
-[languages]
-  [languages.en]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+#[languages]
+#  [languages.en]
+ #   subtitle  = "Hello Friend NG Theme"
+  #  weight    = 1
+   # copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-  [languages.fr]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "about/"
+    url        = "about/" 
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+    identifier = "documentation"
+    name       = "Documentation"
+    url        = "documentation/_book/index.html"
