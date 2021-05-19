@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Applications | Documentation for {lasertrapr}</title>
+  <title>Chapter 4 Analyers | Documentation for {lasertrapr}</title>
   <meta name="description" content="Documentation for using the lasertrapr app" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Applications | Documentation for {lasertrapr}" />
+  <meta property="og:title" content="Chapter 4 Analyers | Documentation for {lasertrapr}" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Applications | Documentation for {lasertrapr}" />
+  <meta name="twitter:title" content="Chapter 4 Analyers | Documentation for {lasertrapr}" />
   
   <meta name="twitter:description" content="Documentation for using the lasertrapr app" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="methods.html"/>
-<link rel="next" href="final-words.html"/>
+<link rel="prev" href="clean-and-process.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="lasertrapr.app"> lasertrapr.app </a></li>
+<li><a href="https://lasertrapr.app"> lasertrapr.app </a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
@@ -150,14 +150,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3.2" data-path="upload.html"><a href="upload.html#split-observations"><i class="fa fa-check"></i><b>2.3.2</b> Split Observations</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="3" data-path="clean-and-process.html"><a href="clean-and-process.html"><i class="fa fa-check"></i><b>3</b> Clean and Process</a></li>
+<li class="chapter" data-level="4" data-path="analyers.html"><a href="analyers.html"><i class="fa fa-check"></i><b>4</b> Analyers</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyers.html"><a href="analyers.html#hm-modelchangepoint"><i class="fa fa-check"></i><b>4.1</b> HM-Model/Changepoint</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyers.html"><a href="analyers.html#options-hm-model"><i class="fa fa-check"></i><b>4.1.1</b> Options: HM-Model</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyers.html"><a href="analyers.html#options-changepoint"><i class="fa fa-check"></i><b>4.1.2</b> Options: Changepoint</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyers.html"><a href="analyers.html#options-displacements"><i class="fa fa-check"></i><b>4.1.3</b> Options: Displacements</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="4.2" data-path="analyers.html"><a href="analyers.html#mini-ensemble"><i class="fa fa-check"></i><b>4.2</b> Mini-Ensemble</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -178,14 +179,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="applications" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Applications</h1>
-<p>Some <em>significant</em> applications are demonstrated in this chapter.</p>
-<div id="example-one" class="section level2">
-<h2><span class="header-section-number">5.1</span> Example one</h2>
+<div id="analyers" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Analyers</h1>
+<p>Currently, there are two analyzers available within the app. The HM-Model/Changepoint analyzer was designed for single molecule trapping data and the mini-ensemble analyzer is self-explanatory. Both analyzers have a similiar UI with the ability to impose user control over some of the analysis parameters.</p>
+<p>For both analyzers you have the option to run the analyzer through all of the observations in a given date folder, or you can select just a single observation. If you select to analyze a single observation you must also select the observation you want to analyze in the Folder Navigator (top right button).</p>
+<div id="hm-modelchangepoint" class="section level2">
+<h2><span class="header-section-number">4.1</span> HM-Model/Changepoint</h2>
+<p>Intended for single molecule data, this analyzer uses a combination approach to identify single molecule binding events. A Hidden Markov Model is implemented with the <a href="https://cran.r-project.org/web/packages/depmixS4/vignettes/depmixS4.pdf">{depmixS4}</a> R-package on a running window transformation of the data to estimate locations of binding events. Then a changepoint analysis is applied to a small subset of the original trapping data around the HM-Model estimated transition periods with the <a href="https://www.jstatsoft.org/article/view/v058i03">{changepoint}</a> R-package to precisely choose the most probable data point (at the original sampling frequency) where the binding event occurred.</p>
+<p>Within the HM-Model/Changepoint analyzer, users have control (to some extent) over most aspects of the analyzer including the running window transformations, some of the HM-Model, and the type of changepoint.</p>
+<p>Clicking the “Options” button will open up a menu that will allow you to set the analysis option.</p>
+<div id="options-hm-model" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Options: HM-Model</h3>
+<p>The Hidden Markov Model analyzes a running window transformation of the original data trace. Here you can select the window width (in data points) and how you would like the window to progress. Users are referenced to <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1301746/pdf/11606292.pdf">Smith, Steffon, Simmons, and Sleep 2001</a> for further details on how to optimize the windows. Per their recommendations the default of the progression of the windows is by 1/2 overlap. <strong>Note: not all window slide options have been tested. Possible bugs may exist and app crash potential</strong>. You can just restart the app and try another option.</p>
+<p>The “Channels” options lets you choose if you want the Hidden Markov Model to use both the running mean AND running variance transformations or just the running variance. A personal anecdotal recommendation is to use both the running mean and variance.</p>
+<p>“EM Random Start” is <code>FALSE</code> (unchecked) by default. If <code>TRUE</code> (checked) the analyzer will use random number generation to start the EM-Algorithm.</p>
 </div>
-<div id="example-two" class="section level2">
-<h2><span class="header-section-number">5.2</span> Example two</h2>
+<div id="options-changepoint" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Options: Changepoint</h3>
+<p>There are two sections the changepoint options. Since changepoint analysis is applied separately to the beginning and ends of the events so you can control the behavior of both. The default is to use the changepoint method “Mean/Var” which has the changepoint alogorithm use the mean and variance position to identify the most probable change. Whereas if “Variance” is selected a slider will appear allowing the user to select a window width for the running variance transformation. The changepoint will then look for a change in the mean signal position of the variance transformation to identify the most probable change.</p>
+</div>
+<div id="options-displacements" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> Options: Displacements</h3>
+<p>Users can select one of two methods for peak displacements to be calculated. The “average” method calculates the mean signal position of the entire ID’d event minus the first and last 5ms. Alternatively, users can opt to use the “peak” method which returns a maximum value from a 5ms running mean of the ID’d event.</p>
+<div id="options-hz" class="section level4">
+<h4><span class="header-section-number">4.1.3.1</span> Options: Hz</h4>
+<p>Users need to specify the sampling frequency (in Hz) for proper conversion between data points and seconds. Defaults to 5000 Hz</p>
+</div>
+</div>
+</div>
+<div id="mini-ensemble" class="section level2">
+<h2><span class="header-section-number">4.2</span> Mini-Ensemble</h2>
 
 </div>
 </div>
@@ -194,8 +217,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="methods.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="clean-and-process.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -238,10 +261,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["lasertrapr-documentation.pdf", "lasertrapr-documentation.epub"],
+"download": null,
 "toc": {
 "collapse": "subsection"
-}
+},
+"search": false
 });
 });
 </script>

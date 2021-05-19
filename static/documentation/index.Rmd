@@ -18,15 +18,15 @@ description: "Documentation for using the lasertrapr app"
 
 ## Install R & RStudio
 
-`{lasertrapr}` can be launched from am active R-session so before you begin to need to [download and install R](https://cloud.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download). Both of these are free. RStudio is an IDE (integrated development environment) and is not 100% necessary, but is recommended. Follow the instructions on the respective websites to complete installation. 
+Currently, `{lasertrapr}` can only be launched from an active R-session. Before you begin you will need to [download and install R](https://cloud.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download). Both of these are free. RStudio is an IDE (integrated development environment) and is not 100% necessary, but is recommended. Follow the instructions on the respective websites to complete installation. 
 
-Additionally, you will need to install the [R build toolchain](https://r-pkgs.org/setup.html#setup-tools). This allows a user to build a package from source on their own computer. The link provides directions on how to do this on Windows, Mac, and Linux. 
+Additionally, you will need to install the [R build toolchain](https://r-pkgs.org/setup.html#setup-tools). This allows a user to build an R-package from source on their own computer. The link provides directions on how to do this on Windows, Mac, and Linux. 
 
-At the moment there is a lot of overheard needed to get the application up and running. Hopefully, in the future a more stable version can be released as a standalone program. 
+At the moment there is a lot of overheard needed to get the application up and running. Hopefully, in the future a more stable version can be released onto CRAN (Comprehensive R Archive Network) or preferably as a standalone program. 
 
 ## Download `{lasertrapr}`
 
-You can download the developers version from Github. 
+Open R/RStudio on your computer. You can download the developers version of the app from Github with the following code. Copy/paste the following into the R-Console or into an R-Script to run:  
 
 ```{r eval=FALSE}
 install.packages("devtools") # i.e. "developer tools"
@@ -34,7 +34,7 @@ library(devtools) # loads the package
 install_github("brentscott93/lasertrapr") # downloads lasertraor from github
 ```
 
-Both `{devtools}` and `{lasertrapr}` will install dependencies. Update and install all that they want when prompted. Sometimes package installation can be finicky with R so alternatively you can install `{devtools}` from within the RStudio IDE by navigating to the "Packages" tab in the lower right box and clicking "Install". For some reason this will work if `install.packages()` is being fussy. 
+Both `{devtools}` and `{lasertrapr}` will need to install dependencies. Update and install all the packages that they want when prompted. Alternatively you can install `{devtools}` from within the RStudio IDE by navigating to the "Packages" tab in the lower right box and clicking "Install".
 
 ## Launch the App
 
