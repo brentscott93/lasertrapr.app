@@ -4,33 +4,35 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Analyzers | 04-analyzers.knit</title>
-  <meta name="description" content="" />
+  <title>Chapter 4 Analyzers | Documentation for {lasertrapr}</title>
+  <meta name="description" content="Documentation for using the lasertrapr app" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Analyzers | 04-analyzers.knit" />
+  <meta property="og:title" content="Chapter 4 Analyzers | Documentation for {lasertrapr}" />
   <meta property="og:type" content="book" />
   
   
-  
+  <meta property="og:description" content="Documentation for using the lasertrapr app" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Analyzers | 04-analyzers.knit" />
+  <meta name="twitter:title" content="Chapter 4 Analyzers | Documentation for {lasertrapr}" />
   
-  
+  <meta name="twitter:description" content="Documentation for using the lasertrapr app" />
   
 
+<meta name="author" content="Brent Scott" />
 
 
+<meta name="date" content="2021-05-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="clean-and-process.html"/>
+<link rel="next" href="ensemble-average.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -71,14 +73,37 @@
 <li><a href="https://lasertrapr.app"> lasertrapr.app </a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path=""><a href="#analyzers"><i class="fa fa-check"></i><b>1</b> Analyzers</a><ul>
-<li class="chapter" data-level="1.1" data-path=""><a href="#hm-modelchangepoint"><i class="fa fa-check"></i><b>1.1</b> HM-Model/Changepoint</a><ul>
-<li class="chapter" data-level="1.1.1" data-path=""><a href="#options-hm-model"><i class="fa fa-check"></i><b>1.1.1</b> Options: HM-Model</a></li>
-<li class="chapter" data-level="1.1.2" data-path=""><a href="#options-changepoint"><i class="fa fa-check"></i><b>1.1.2</b> Options: Changepoint</a></li>
-<li class="chapter" data-level="1.1.3" data-path=""><a href="#options-displacements"><i class="fa fa-check"></i><b>1.1.3</b> Options: Displacements</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#install-r-rstudio"><i class="fa fa-check"></i><b>1.1</b> Install R &amp; RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#download-lasertrapr"><i class="fa fa-check"></i><b>1.2</b> Download <strong>{lasertrapr}</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#launch-the-app"><i class="fa fa-check"></i><b>1.3</b> Launch the App</a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path=""><a href="#mini-ensemble"><i class="fa fa-check"></i><b>1.2</b> Mini-Ensemble</a></li>
+<li class="chapter" data-level="2" data-path="upload.html"><a href="upload.html"><i class="fa fa-check"></i><b>2</b> Upload Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="upload.html"><a href="upload.html#the-lasertrapr-folder"><i class="fa fa-check"></i><b>2.1</b> The ~/lasertrapr/ folder</a></li>
+<li class="chapter" data-level="2.2" data-path="upload.html"><a href="upload.html#create-folders"><i class="fa fa-check"></i><b>2.2</b> Create Folders</a></li>
+<li class="chapter" data-level="2.3" data-path="upload.html"><a href="upload.html#load-data"><i class="fa fa-check"></i><b>2.3</b> Load Data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="upload.html"><a href="upload.html#simple-upload"><i class="fa fa-check"></i><b>2.3.1</b> Simple Upload</a></li>
+<li class="chapter" data-level="2.3.2" data-path="upload.html"><a href="upload.html#split-observations"><i class="fa fa-check"></i><b>2.3.2</b> Split Observations</a></li>
 </ul></li>
+<li class="chapter" data-level="2.4" data-path="upload.html"><a href="upload.html#tldr"><i class="fa fa-check"></i><b>2.4</b> tl;dr</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="clean-and-process.html"><a href="clean-and-process.html"><i class="fa fa-check"></i><b>3</b> Clean and Process</a></li>
+<li class="chapter" data-level="4" data-path="analyzers.html"><a href="analyzers.html"><i class="fa fa-check"></i><b>4</b> Analyzers</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyzers.html"><a href="analyzers.html#hm-modelchangepoint"><i class="fa fa-check"></i><b>4.1</b> HM-Model/Changepoint</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyzers.html"><a href="analyzers.html#options-hm-model"><i class="fa fa-check"></i><b>4.1.1</b> Options: HM-Model</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyzers.html"><a href="analyzers.html#options-changepoint"><i class="fa fa-check"></i><b>4.1.2</b> Options: Changepoint</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyzers.html"><a href="analyzers.html#options-displacements"><i class="fa fa-check"></i><b>4.1.3</b> Options: Displacements</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyzers.html"><a href="analyzers.html#mini-ensemble"><i class="fa fa-check"></i><b>4.2</b> Mini-Ensemble</a></li>
+<li class="chapter" data-level="4.3" data-path="analyzers.html"><a href="analyzers.html#tldr-1"><i class="fa fa-check"></i><b>4.3</b> tl;dr</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ensemble-average.html"><a href="ensemble-average.html"><i class="fa fa-check"></i><b>5</b> Ensemble Average</a><ul>
+<li class="chapter" data-level="5.1" data-path="ensemble-average.html"><a href="ensemble-average.html#prep-ensembles"><i class="fa fa-check"></i><b>5.1</b> Prep Ensembles</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-forward"><i class="fa fa-check"></i><b>5.1.1</b> Extending Forward</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-backwards"><i class="fa fa-check"></i><b>5.2</b> Extending Backwards</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="summarize.html"><a href="summarize.html"><i class="fa fa-check"></i><b>6</b> Summarize</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -91,7 +116,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Documentation for <strong>{lasertrapr}</strong></a>
           </h1>
         </div>
 
@@ -99,38 +124,46 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<!--bookdown:title:end-->
-<!--bookdown:title:start-->
 <div id="analyzers" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Analyzers</h1>
-<p>Currently, there are two analyzers available within the app. The HM-Model/Changepoint analyzer was designed for single molecule trapping data and the mini-ensemble analyzer is self-explanatory. Both analyzers have a similiar UI with the ability to impose user control over some of the analysis parameters.</p>
+<h1><span class="header-section-number">Chapter 4</span> Analyzers</h1>
+<p>Currently, there are two analyzers available within the app. The HM-Model/Changepoint analyzer was designed for single molecule trapping data and the mini-ensemble analyzer is self-explanatory. Both analyzers have a similar UI with the ability to impose user control over some of the analysis parameters.</p>
 <p>For both analyzers you have the option to run the analyzer through all of the observations in a given date folder, or you can select just a single observation. If you select to analyze a single observation you must also select the observation you want to analyze in the Folder Navigator (top right button).</p>
 <div id="hm-modelchangepoint" class="section level2">
-<h2><span class="header-section-number">1.1</span> HM-Model/Changepoint</h2>
+<h2><span class="header-section-number">4.1</span> HM-Model/Changepoint</h2>
 <p>Intended for single molecule data, this analyzer uses a combination approach to identify single molecule binding events. A Hidden Markov Model is implemented with the <a href="https://cran.r-project.org/web/packages/depmixS4/vignettes/depmixS4.pdf">{depmixS4}</a> R-package on a running window transformation of the data to estimate locations of binding events. Then a changepoint analysis is applied to a small subset of the original trapping data around the HM-Model estimated transition periods with the <a href="https://www.jstatsoft.org/article/view/v058i03">{changepoint}</a> R-package to precisely choose the most probable data point (at the original sampling frequency) where the binding event occurred.</p>
 <p>Within the HM-Model/Changepoint analyzer, users have control (to some extent) over most aspects of the analyzer including the running window transformations, some of the HM-Model, and the type of changepoint.</p>
 <p>Clicking the “Options” button will open up a menu that will allow you to set the analysis option.</p>
 <div id="options-hm-model" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> Options: HM-Model</h3>
+<h3><span class="header-section-number">4.1.1</span> Options: HM-Model</h3>
 <p>The Hidden Markov Model analyzes a running window transformation of the original data trace. Here you can select the window width (in data points) and how you would like the window to progress. Users are referenced to <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1301746/pdf/11606292.pdf">Smith, Steffon, Simmons, and Sleep 2001</a> for further details on how to optimize the windows. Per their recommendations the default of the progression of the windows is by 1/2 overlap. <strong>Note: not all window slide options have been tested. Possible bugs may exist and app crash potential</strong>. You can just restart the app and try another option.</p>
 <p>The “Channels” options lets you choose if you want the Hidden Markov Model to use both the running mean AND running variance transformations or just the running variance. A personal anecdotal recommendation is to use both the running mean and variance.</p>
 <p>“EM Random Start” is <code>FALSE</code> (unchecked) by default. If <code>TRUE</code> (checked) the analyzer will use random number generation to start the EM-Algorithm.</p>
 </div>
 <div id="options-changepoint" class="section level3">
-<h3><span class="header-section-number">1.1.2</span> Options: Changepoint</h3>
+<h3><span class="header-section-number">4.1.2</span> Options: Changepoint</h3>
 <p>There are two sections the changepoint options. Since changepoint analysis is applied separately to the beginning and ends of the events so you can control the behavior of both. The default is to use the changepoint method “Mean/Var” which has the changepoint alogorithm use the mean and variance position to identify the most probable change. Whereas if “Variance” is selected a slider will appear allowing the user to select a window width for the running variance transformation. The changepoint will then look for a change in the mean signal position of the variance transformation to identify the most probable change.</p>
 </div>
 <div id="options-displacements" class="section level3">
-<h3><span class="header-section-number">1.1.3</span> Options: Displacements</h3>
+<h3><span class="header-section-number">4.1.3</span> Options: Displacements</h3>
 <p>Users can select one of two methods for peak displacements to be calculated. The “average” method calculates the mean signal position of the entire ID’d event minus the first and last 5ms. Alternatively, users can opt to use the “peak” method which returns a maximum value from a 5ms running mean of the ID’d event.</p>
 <div id="options-hz" class="section level4">
-<h4><span class="header-section-number">1.1.3.1</span> Options: Hz</h4>
-<p>Users need to specify the sampling frequency (in Hz) for proper conversion between data points and seconds. Defaults to 5000 Hz</p>
+<h4><span class="header-section-number">4.1.3.1</span> Options: Hz</h4>
+<p>Users need to specify the sampling frequency (in Hz) for proper conversion between data points and seconds. Defaults to 5000 Hz.</p>
 </div>
 </div>
 </div>
 <div id="mini-ensemble" class="section level2">
-<h2><span class="header-section-number">1.2</span> Mini-Ensemble</h2>
+<h2><span class="header-section-number">4.2</span> Mini-Ensemble</h2>
+<p>This mini-ensemble analyzer uses a simple thresholding method to ID events. Users can control the threshold parameters for the displacement and minimum time on as well as the running window width.</p>
+</div>
+<div id="tldr-1" class="section level2">
+<h2><span class="header-section-number">4.3</span> tl;dr</h2>
+<p>Just show me a video…</p>
+<video width="800" height="400" controls>
+<source src="images/analyzer.mp4" type="video/mp4">
+<p>Your browser does not support the video tag.
+</video></p>
+
 </div>
 </div>
             </section>
@@ -138,8 +171,8 @@
           </div>
         </div>
       </div>
-
-
+<a href="clean-and-process.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ensemble-average.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -182,11 +215,10 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["lasertrapr-documentation.pdf", "lasertrapr-documentation.epub"],
 "toc": {
 "collapse": "subsection"
-},
-"search": false
+}
 });
 });
 </script>

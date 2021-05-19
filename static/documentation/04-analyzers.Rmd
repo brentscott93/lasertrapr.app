@@ -1,6 +1,6 @@
 # Analyzers
 
-Currently, there are two analyzers available within the app. The HM-Model/Changepoint analyzer was designed for single molecule trapping data and the mini-ensemble analyzer is self-explanatory. Both analyzers have a similiar UI with the ability to impose user control over some of the analysis parameters. 
+Currently, there are two analyzers available within the app. The HM-Model/Changepoint analyzer was designed for single molecule trapping data and the mini-ensemble analyzer is self-explanatory. Both analyzers have a similar UI with the ability to impose user control over some of the analysis parameters. 
 
 For both analyzers you have the option to run the analyzer through all of the observations in a given date folder, or you can select just a single observation. If you select to analyze a single observation you must also select the observation you want to analyze in the Folder Navigator (top right button). 
 
@@ -30,7 +30,18 @@ Users can select one of two methods for peak displacements to be calculated. The
 
 #### Options: Hz
 
-Users need to specify the sampling frequency (in Hz) for proper conversion between data points and seconds. Defaults to 5000 Hz
+Users need to specify the sampling frequency (in Hz) for proper conversion between data points and seconds. Defaults to 5000 Hz.
 
 
 ## Mini-Ensemble
+
+This mini-ensemble analyzer uses a simple thresholding method to ID events. Users can control the threshold parameters for the displacement and minimum time on as well as the running window width. 
+
+## tl;dr
+
+Just show me a video...
+
+<video width="800" height="400" controls>
+  <source src="images/analyzer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
