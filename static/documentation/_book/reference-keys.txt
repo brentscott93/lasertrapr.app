@@ -17,3 +17,9 @@ options-displacements
 options-hz
 mini-ensemble
 analyzers
+ensemble-average
+prep-ensembles
+extending-forward
+section
+extending-backwards
+summarize

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Ensemble Average | Documentation for {lasertrapr}</title>
+  <meta name="description" content="Documentation for using the lasertrapr app" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Ensemble Average | Documentation for {lasertrapr}" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Documentation for using the lasertrapr app" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Ensemble Average | Documentation for {lasertrapr}" />
+  
+  <meta name="twitter:description" content="Documentation for using the lasertrapr app" />
+  
+
+<meta name="author" content="Brent Scott" />
+
+
+<meta name="date" content="2021-05-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analyzers.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://lasertrapr.app"> lasertrapr.app </a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#install-r-rstudio"><i class="fa fa-check"></i><b>1.1</b> Install R &amp; RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#download-lasertrapr"><i class="fa fa-check"></i><b>1.2</b> Download <code>{lasertrapr}</code></a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#launch-the-app"><i class="fa fa-check"></i><b>1.3</b> Launch the App</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="upload.html"><a href="upload.html"><i class="fa fa-check"></i><b>2</b> Upload Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="upload.html"><a href="upload.html#the-lasertrapr-folder"><i class="fa fa-check"></i><b>2.1</b> The ~/lasertrapr/ folder</a></li>
+<li class="chapter" data-level="2.2" data-path="upload.html"><a href="upload.html#create-folders"><i class="fa fa-check"></i><b>2.2</b> Create Folders</a></li>
+<li class="chapter" data-level="2.3" data-path="upload.html"><a href="upload.html#load-data"><i class="fa fa-check"></i><b>2.3</b> Load Data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="upload.html"><a href="upload.html#simple-upload"><i class="fa fa-check"></i><b>2.3.1</b> Simple Upload</a></li>
+<li class="chapter" data-level="2.3.2" data-path="upload.html"><a href="upload.html#split-observations"><i class="fa fa-check"></i><b>2.3.2</b> Split Observations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="clean-and-process.html"><a href="clean-and-process.html"><i class="fa fa-check"></i><b>3</b> Clean and Process</a></li>
+<li class="chapter" data-level="4" data-path="analyzers.html"><a href="analyzers.html"><i class="fa fa-check"></i><b>4</b> Analyzers</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyzers.html"><a href="analyzers.html#hm-modelchangepoint"><i class="fa fa-check"></i><b>4.1</b> HM-Model/Changepoint</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyzers.html"><a href="analyzers.html#options-hm-model"><i class="fa fa-check"></i><b>4.1.1</b> Options: HM-Model</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyzers.html"><a href="analyzers.html#options-changepoint"><i class="fa fa-check"></i><b>4.1.2</b> Options: Changepoint</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyzers.html"><a href="analyzers.html#options-displacements"><i class="fa fa-check"></i><b>4.1.3</b> Options: Displacements</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyzers.html"><a href="analyzers.html#mini-ensemble"><i class="fa fa-check"></i><b>4.2</b> Mini-Ensemble</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ensemble-average.html"><a href="ensemble-average.html"><i class="fa fa-check"></i><b>5</b> Ensemble Average</a><ul>
+<li class="chapter" data-level="5.1" data-path="ensemble-average.html"><a href="ensemble-average.html#prep-ensembles"><i class="fa fa-check"></i><b>5.1</b> Prep Ensembles</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-forward"><i class="fa fa-check"></i><b>5.1.1</b> Extending Forward</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-backwards"><i class="fa fa-check"></i><b>5.2</b> Extending Backwards</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Documentation for <code>{lasertrapr}</code></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ensemble-average" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Ensemble Average</h1>
+<p>This is currently under development. The only part that works currently is the “Prep Ensembles” feature.</p>
+<div id="prep-ensembles" class="section level2">
+<h2><span class="header-section-number">5.1</span> Prep Ensembles</h2>
+<p>An individual single molecule (myosin) event should be composed of two substeps (d1 &amp; d2). Events can be aligned at the changepoint identified start or end of the events, temporally synchronized to the same duration, and then averaged together to create one “average” event. The user can control how the event synchronization occurs.</p>
+<p>All the original trapping data traces are saved in the “trap-data.csv” files and their ID’d events are saved in “measured-events.csv”. The “measured-events.csv” file not only includes displacements, event durations, etc., but also the changepoint ID’d datapoint for the start and end of each event. This information can be used for the ensemble averaging.</p>
+<p>Ultimately, the “Prep Ensembles” button will create an “ensemble-data.csv” file for each included observation that will have all of the forwards and backwards extended events that was constructed with the selected parameters described below.</p>
+<div id="extending-forward" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Extending Forward</h3>
+<p>The goal with the forward ensemble average is to align the beginning of the events and “stretch” the ends of the short events to be equal to the longest event. The app lets the user choose how much (or little) time to use to extend the event. A 3ms “Avg of ms to extend forward” (I should probably come up with better names for these parameters) value means the position of the last 3ms of an events will be averaged and that resulting average value will be used (repeated) to extend the event out. The window size would be dependent on [ATP]. The higher the [ATP] the lower the window should be to decrease the likelihood of averaging pre-hitch (d1) displacement position. Whereas, at high [ATP] myosin will spend a longer time in a post-hitch (d2) final displacement position waiting for ATP to induce dissociation so you can be less aggressive in the size of the window in attempts to truly capture the average of that final d2 displacement.</p>
+</div>
+</div>
+<div id="extending-backwards" class="section level2">
+<h2><span class="header-section-number">5.2</span> Extending Backwards</h2>
+<p>Similar idea of the forwards, but for the backward ensemble average the goal is to capture the average position signal of the d1 pre-hitch position signal to extend the events. However, this is a little tricky. The changepoint algorithm used identifies the transition period going from un-bound to bound as a part of the event. This is the very brief period in time where the bead is moving through solution as it is displaced from the center of the trap. As a result, even though these datapoint are considered part of the event, they are not a true representation of the post-powerstroke/pre-hitch d1 position. The app gives the option to “skip” into the event before performing an average in effort to try to avoid averaging in these transition points. The “Number of ms to skip before s1 avg” (again not a catchy name…) lets the user decide how many ms to skip into each event before averaging. Similarly, the “Avg of ms to extend s1 backwards” allows the user to select how many ms to include in the average after skipping ahead.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analyzers.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["lasertrapr-documentation.pdf", "lasertrapr-documentation.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+# Summarize
+
+Under development. I think this only works if a project has 3 or more conditions. The goal is to provide a quick summary look at all the data including plots and prelimary statistical analyses. 
