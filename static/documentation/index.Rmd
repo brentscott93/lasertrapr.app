@@ -4,10 +4,12 @@ author: "Brent Scott"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography:
+- book.bib
+- packages.bib
 biblio-style: apalike
 link-citations: yes
-description: "Documentation for using the lasertrapr app"
+description: Documentation for using the lasertrapr app
 ---
 
 # Getting Started
@@ -26,8 +28,15 @@ At the moment there is a lot of overheard needed to get the application up and r
 
 ## Download **{lasertrapr}**
 
-Open R/RStudio on your computer. You can download the developers version of the app from Github with the following code. Copy/paste the following into the R-Console or into an R-Script to run:  
+Open R/RStudio on your computer. You can download the latest stable version of the app from my *drat* repository on Github with the following code. Copy/paste the following into the R-Console or into an R-Script to run:  
 
+
+```{r eval=FALSE}
+install.packages("drat") # installs drat package
+drat::addRepo("brentscott93") # adds my drat repo
+install.packages("lasertrapr") # installs the lasertrapr package
+```
+For users that want the latest developmental version to fork and contribute you can install from GitHub with: 
 ```{r eval=FALSE}
 install.packages("devtools") # i.e. "developer tools"
 library(devtools) # loads the package
@@ -45,11 +54,11 @@ library(lasertrapr) # load the package and its dependencies
 run_app() # this will launch the app GUI in your default web browser
 ```
 
-Once the initial setup and installation is completed, the above two lines is the only code that will need to be run each time you want to use the app. You can update to the current developers version anytime by re-running `devtools::install_gitub("brentscott93/lasertrapr")`. 
+Once the initial setup and installation is completed, the above two lines is the only code that will need to be run each time you want to use the app. You can update to the current developers version anytime by re-running `install.packages("lasertrapr")` or `devtools::install_gitub("brentscott93/lasertrapr")`. 
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'golem'
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'golem', 'drat'
 ), 'packages.bib')
 ```
