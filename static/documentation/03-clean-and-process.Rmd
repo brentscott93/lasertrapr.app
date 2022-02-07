@@ -47,7 +47,7 @@ When collecting laser trap data the detector is measuring the relative intensity
 
 #### Range
 
-The baseline range is simplest and the most "legacy" (i.e. this was easiest for me to implement when I was doing this all manually before `{lasertrapr}`). You can manually select a quiescient perioed of data that represents the baseline signal and they mean position of this period of data will be calculated. By selecting **remove base** from the **Graph Options** and hitting **Graph** to update the app will provide a preview. *NOTE: this will not be saved until you explicitly hit save."
+The baseline range is simplest and the most "legacy" (i.e. this was easiest for me to implement when I was doing this all manually before `{lasertrapr}`). You can manually select a quiescient perioed of data that represents the baseline signal and they mean position of this period of data will be calculated. By selecting **remove base** from the **Graph Options** and hitting **Graph** to update the app will provide a preview. *NOTE: this will not be saved until you explicitly hit save.*
 
 <video width="800" height="400" controls> 
   <source src="images/remove-baseline.mp4" type="video/mp4">
@@ -55,7 +55,7 @@ Your browser does not support the video tag.
 </video>
 
 #### Remove MV
-Sometimes it can be tricky to find a nice quiescent period of baseline signal to calcualte the range. This is expecially the case with fast motors and mini-ensemble experiments. Instead it can be helpful to use the **Remove MV** option. This will perform a Mean-Variance transformation of the entire data trace and show the plot in an interactive window. You can then select the area that represents the baseline population, the mean is calculated, and by selecting **Remove MV** in **Graph Options** and hitting **Graph** to update, the app will provide a preview. *NOTE: this will not be saved until you explicitly hit save."
+Sometimes it can be tricky to find a nice quiescent period of baseline signal to calcualte the range. This is expecially the case with fast motors and mini-ensemble experiments. Instead it can be helpful to use the **Remove MV** option. This will perform a Mean-Variance transformation of the entire data trace and show the plot in an interactive window. You can then select the area that represents the baseline population, the mean is calculated, and by selecting **Remove MV** in **Graph Options** and hitting **Graph** to update, the app will provide a preview. *NOTE: this will not be saved until you explicitly hit save.*
 
 <video width="800" height="400" controls>
   <source src="images/remove-mv.mp4" type="video/mp4">
@@ -63,6 +63,8 @@ Your browser does not support the video tag.
 </video>
 
 ### Detrend data
+
+Stage drift can occur in longer records, or put another way the displacement on the y-axis will start to trend with time on the x-axis. There should be no relationship between time and displacement (slope should be 0). If this occurs the data record will look like it is tilted diagonally. This can be compensated by *de*-trending the data. A piecewise linear regression is fit to every 5 seconds of data and the resulting slope is removed from the data. Select **Detrend** in **Graph Options** and click **Graph** to preview the results. This also centers the baseline around 0. *NOTE: this will not be saved until you explicitly hit save.*
 
 <video width="800" height="400" controls>
   <source src="images/remove-mv.mp4" type="video/mp4">
