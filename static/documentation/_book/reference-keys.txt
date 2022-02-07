@@ -23,3 +23,17 @@ prep-ensembles
 extending-forward
 extending-backwards
 summarize
+clean
+deleting-data
+making-new-obs
+process
+remove-baseline
+detrend-data
+convert-to-nm
+include
+move-data
+cut-data
+range
+remove-mv
+to-include-or-not-to-include
+save
