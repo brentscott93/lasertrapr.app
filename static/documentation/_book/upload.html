@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Upload Data | Documentation for {lasertrapr}</title>
   <meta name="description" content="Documentation for using the lasertrapr app" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Upload Data | Documentation for {lasertrapr}" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Documentation for using the lasertrapr app" />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Brent Scott" />
 
 
-<meta name="date" content="2022-02-07" />
+<meta name="date" content="2022-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="clean-and-process.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -181,15 +180,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.2" data-path="analyzers.html"><a href="analyzers.html#mini-ensemble"><i class="fa fa-check"></i><b>4.2</b> Mini-Ensemble</a></li>
 <li class="chapter" data-level="4.3" data-path="analyzers.html"><a href="analyzers.html#tldr-1"><i class="fa fa-check"></i><b>4.3</b> tl;dr</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="ensemble-average.html"><a href="ensemble-average.html"><i class="fa fa-check"></i><b>5</b> Ensemble Average</a>
+<li class="chapter" data-level="5" data-path="summarize.html"><a href="summarize.html"><i class="fa fa-check"></i><b>5</b> Summarize</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="ensemble-average.html"><a href="ensemble-average.html#prep-ensembles"><i class="fa fa-check"></i><b>5.1</b> Prep Ensembles</a>
+<li class="chapter" data-level="5.1" data-path="summarize.html"><a href="summarize.html#tldr-2"><i class="fa fa-check"></i><b>5.1</b> tl;dr</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="ensemble-average.html"><a href="ensemble-average.html"><i class="fa fa-check"></i><b>6</b> Ensemble Average</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-forward"><i class="fa fa-check"></i><b>5.1.1</b> Extending Forward</a></li>
+<li class="chapter" data-level="6.1" data-path="ensemble-average.html"><a href="ensemble-average.html#prep-ensembles"><i class="fa fa-check"></i><b>6.1</b> Prep Ensembles</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-forward"><i class="fa fa-check"></i><b>6.1.1</b> Extending Forward</a></li>
+<li class="chapter" data-level="6.1.2" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-backwards"><i class="fa fa-check"></i><b>6.1.2</b> Extending Backwards</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-backwards"><i class="fa fa-check"></i><b>5.2</b> Extending Backwards</a></li>
+<li class="chapter" data-level="6.2" data-path="ensemble-average.html"><a href="ensemble-average.html#average-fit-ensembles"><i class="fa fa-check"></i><b>6.2</b> Average &amp; Fit Ensembles</a></li>
+<li class="chapter" data-level="6.3" data-path="ensemble-average.html"><a href="ensemble-average.html#plot-ensembles"><i class="fa fa-check"></i><b>6.3</b> Plot Ensembles</a></li>
+<li class="chapter" data-level="6.4" data-path="ensemble-average.html"><a href="ensemble-average.html#tldr-3"><i class="fa fa-check"></i><b>6.4</b> tl;dr</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="summarize.html"><a href="summarize.html"><i class="fa fa-check"></i><b>6</b> Summarize</a></li>
+<li class="chapter" data-level="7" data-path="figures.html"><a href="figures.html"><i class="fa fa-check"></i><b>7</b> Figures</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="figures.html"><a href="figures.html#tldr-4"><i class="fa fa-check"></i><b>7.1</b> tl;dr</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -210,34 +219,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="upload" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Upload Data</h1>
-<div id="the-lasertrapr-folder" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> The ~/lasertrapr/ folder</h2>
+<div id="upload" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Upload Data<a href="upload.html#upload" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="the-lasertrapr-folder" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> The ~/lasertrapr/ folder<a href="upload.html#the-lasertrapr-folder" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The <strong>{lasertrapr}</strong> app offers more than just the analysis of single laser trap data traces, but the application also serves as an <em>opinionated data management</em> tool. The app forces users to adopt a specific directory tree structure. All data can be organized into specific <strong>project</strong>, <strong>conditions</strong>, <strong>date</strong>, and <strong>observation</strong> folders. Additionally, this structure can be leveraged in the post-analysis stage to easily handle statistical analyses and auto-generation of plots for quick summary features provided by the app. Upon initial launch of the app, a <em>lasertrapr</em> folder will be created under <code>~/lasertrapr</code>. The exact location of the folder will vary depending on OS, but you can get the exact location by running <code>path.expand("~/lasertrapr")</code> in the R-console. All of your data and analyses will be created and saved within this folder.</p>
 <p>The app will take any uploaded data and copy it into an <strong>observation</strong> folder. In the laser trap, we will assume an “observation”is all the data collected at one mogul at a given time. This data, or observation, would have been collected on a specific day (date) under specific solution conditions (ionic strength, pH, mutations, etc.) and would belong to one bigger project. This logic provides the basis for the data management provided by the app. <strong>The project, conditions, and date folders must exist in order for data to be uploaded.</strong> The app will automatically create the observation folders when data is uploaded.</p>
 </div>
-<div id="create-folders" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Create Folders</h2>
+<div id="create-folders" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Create Folders<a href="upload.html#create-folders" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Located in the top right of the app is the <strong>Folder Manager</strong>. Click to open the menu (there is a known bug that when opening menu for first time some of the menu is cut off, you can click outside menu to close, and just re-opening will fix this menu display). Click the dropdown and either select your specific project folder or select “Create New…” to create a new folder. Avoid using spaces in the folder names. The prefix “project_” will be appended to the beginning. Continue to create folders in the same way for the conditions and date.</p>
 <p>In lieu of using spaces, users are encouraged to use “-” and “under_score” in your conditions naming conventions. I prefer to use a combination of both. I use a “-” as a space <em>within</em> a given variable name and “under_score” as a space separator <em>between</em> distinct variables in the conditions. For instance, if I collected data with a wild-type myosin (WT) at pH 7.0 and 30mM P<sub>i</sub> my conditions would be “WT_pH-7.0_30mM-Pi”. The app will add a “conditions” column to all the uploaded trapping data to ID each observation from one another (along with columns for the project, date, and observation info). The benefit of having a standard naming convention and knowing what the roles of the special space seperators are will allow for more flexibility and robust analysis later on. For example, eventually the conditions column can be separated into <em>many</em> variable columns easily in the post-analysis by knowing that variables are separated by “under_score”. It doesn’t matter what you use, just be consistent.</p>
 </div>
-<div id="load-data" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Load Data</h2>
-<div id="simple-upload" class="section level3" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Simple Upload</h3>
+<div id="load-data" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Load Data<a href="upload.html#load-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="simple-upload" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Simple Upload<a href="upload.html#simple-upload" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A simple upload means the user has a complete file of trap data. One file = one complete record.</p>
 <p>Any regular delimited file type can be loaded into the app (thanks to <code>fread()</code> from {data.table}). Currently, the app only supports single trap detector data which means only one signal columns can be used for analysis. <strong>The first column in the data file will automatically be chosen as the trap data</strong>. The app will make a copy of the data and re-format it for use within itself. Uploading a dataset to the app will create an “obs-##” folder inside the currently selected data folder. The data will be saved within that “obs-##” as “trap-data.csv”. This last detail is purely informative. One of the benefit of using the app is not worrying about file management. You technically will never need to look inside the files created by the app, but it is still nice to know how it works and where to find things.</p>
 <p>Multiple files can be uploaded at once too. Each file will be treated as a new observation. If three files are uploaded, then the folders “obs-01”,“obs-02”, and “obs-03” will be created within the selected date folder and “trap-data.csv” files will be initialized from the uploaded data within the respective observation folders.</p>
 <p>If you are uploading simulated data or data that has already been processed you can check the “Ready for Analysis?” box which will let you enter a trap stiffness (pN/nm) value and assumes you don’t need to convert data from mV to nm (the app will use a value of 1 for the mV to nm conversion during subsequent analysis). This allows users to skip the “Clean &amp; Process” section of the app since the data will be ready for analysis once the data is initialized.</p>
 </div>
-<div id="split-observations" class="section level3" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> Split Observations</h3>
+<div id="split-observations" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Split Observations<a href="upload.html#split-observations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This is a special use case for the Debold Lab. The trapping computer saves a separate .txt file for every 5-seconds of data collected. All .txt files from a given conditions/date combination can be uploaded at once and the app will read the time-stamps and concatenate corresponding observation files together based upon the user selected time threshold.</p>
 </div>
 </div>
-<div id="tldr" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> tl;dr</h2>
+<div id="tldr" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> tl;dr<a href="upload.html#tldr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Just show me a video…</p>
 <video width="800" height="400" controls>
 <source src="images/upload.mp4" type="video/mp4">

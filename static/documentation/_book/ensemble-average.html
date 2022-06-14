@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Ensemble Average | Documentation for {lasertrapr}</title>
+  <title>Chapter 6 Ensemble Average | Documentation for {lasertrapr}</title>
   <meta name="description" content="Documentation for using the lasertrapr app" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Ensemble Average | Documentation for {lasertrapr}" />
+  <meta property="og:title" content="Chapter 6 Ensemble Average | Documentation for {lasertrapr}" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Documentation for using the lasertrapr app" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Ensemble Average | Documentation for {lasertrapr}" />
+  <meta name="twitter:title" content="Chapter 6 Ensemble Average | Documentation for {lasertrapr}" />
   
   <meta name="twitter:description" content="Documentation for using the lasertrapr app" />
   
@@ -24,16 +23,15 @@
 <meta name="author" content="Brent Scott" />
 
 
-<meta name="date" content="2022-02-07" />
+<meta name="date" content="2022-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="analyzers.html"/>
-<link rel="next" href="summarize.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<link rel="prev" href="summarize.html"/>
+<link rel="next" href="figures.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -181,15 +180,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.2" data-path="analyzers.html"><a href="analyzers.html#mini-ensemble"><i class="fa fa-check"></i><b>4.2</b> Mini-Ensemble</a></li>
 <li class="chapter" data-level="4.3" data-path="analyzers.html"><a href="analyzers.html#tldr-1"><i class="fa fa-check"></i><b>4.3</b> tl;dr</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="ensemble-average.html"><a href="ensemble-average.html"><i class="fa fa-check"></i><b>5</b> Ensemble Average</a>
+<li class="chapter" data-level="5" data-path="summarize.html"><a href="summarize.html"><i class="fa fa-check"></i><b>5</b> Summarize</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="ensemble-average.html"><a href="ensemble-average.html#prep-ensembles"><i class="fa fa-check"></i><b>5.1</b> Prep Ensembles</a>
+<li class="chapter" data-level="5.1" data-path="summarize.html"><a href="summarize.html#tldr-2"><i class="fa fa-check"></i><b>5.1</b> tl;dr</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="ensemble-average.html"><a href="ensemble-average.html"><i class="fa fa-check"></i><b>6</b> Ensemble Average</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-forward"><i class="fa fa-check"></i><b>5.1.1</b> Extending Forward</a></li>
+<li class="chapter" data-level="6.1" data-path="ensemble-average.html"><a href="ensemble-average.html#prep-ensembles"><i class="fa fa-check"></i><b>6.1</b> Prep Ensembles</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-forward"><i class="fa fa-check"></i><b>6.1.1</b> Extending Forward</a></li>
+<li class="chapter" data-level="6.1.2" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-backwards"><i class="fa fa-check"></i><b>6.1.2</b> Extending Backwards</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="ensemble-average.html"><a href="ensemble-average.html#extending-backwards"><i class="fa fa-check"></i><b>5.2</b> Extending Backwards</a></li>
+<li class="chapter" data-level="6.2" data-path="ensemble-average.html"><a href="ensemble-average.html#average-fit-ensembles"><i class="fa fa-check"></i><b>6.2</b> Average &amp; Fit Ensembles</a></li>
+<li class="chapter" data-level="6.3" data-path="ensemble-average.html"><a href="ensemble-average.html#plot-ensembles"><i class="fa fa-check"></i><b>6.3</b> Plot Ensembles</a></li>
+<li class="chapter" data-level="6.4" data-path="ensemble-average.html"><a href="ensemble-average.html#tldr-3"><i class="fa fa-check"></i><b>6.4</b> tl;dr</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="summarize.html"><a href="summarize.html"><i class="fa fa-check"></i><b>6</b> Summarize</a></li>
+<li class="chapter" data-level="7" data-path="figures.html"><a href="figures.html"><i class="fa fa-check"></i><b>7</b> Figures</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="figures.html"><a href="figures.html#tldr-4"><i class="fa fa-check"></i><b>7.1</b> tl;dr</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -210,22 +219,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ensemble-average" class="section level1" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Ensemble Average</h1>
-<p>This is currently under development. The only part that works currently is the “Prep Ensembles” feature.</p>
-<div id="prep-ensembles" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Prep Ensembles</h2>
+<div id="ensemble-average" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Ensemble Average<a href="ensemble-average.html#ensemble-average" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Ensemble averaging in <strong>{lasertrapr}</strong> is divided into three distinct steps 1) preparing the ensembles, 2) averaging and fitting the ensembles, and 3) plotting. Separating these distinct tasks provides the user with more control over the prococess without having to re-run computationally long tasks repeatedly.</p>
+<div id="prep-ensembles" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Prep Ensembles<a href="ensemble-average.html#prep-ensembles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>An individual single molecule (myosin) event should be composed of two substeps (d1 &amp; d2). Events can be aligned at the changepoint identified start or end of the events, temporally synchronized to the same duration, and then averaged together to create one “average” event. The user can control how the event synchronization occurs.</p>
 <p>All the original trapping data traces are saved in the “trap-data.csv” files and their ID’d events are saved in “measured-events.csv”. The “measured-events.csv” file not only includes displacements, event durations, etc., but also the changepoint ID’d datapoint for the start and end of each event. This information can be used for the ensemble averaging.</p>
-<p>Ultimately, the “Prep Ensembles” button will create an “ensemble-data.csv” file for each included observation that will have all of the forwards and backwards extended events that was constructed with the selected parameters described below.</p>
-<div id="extending-forward" class="section level3" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> Extending Forward</h3>
-<p>The goal with the forward ensemble average is to align the beginning of the events and “stretch” the ends of the short events to be equal to the longest event. The app lets the user choose how much (or little) time to use to extend the event. A 3ms “Avg of ms to extend forward” (I should probably come up with better names for these parameters) value means the position of the last 3ms of an events will be averaged and that resulting average value will be used (repeated) to extend the event out. The window size would be dependent on [ATP]. The higher the [ATP] the lower the window should be to decrease the likelihood of averaging pre-hitch (d1) displacement position. Whereas, at high [ATP] myosin will spend a longer time in a post-hitch (d2) final displacement position waiting for ATP to induce dissociation so you can be less aggressive in the size of the window in attempts to truly capture the average of that final d2 displacement.</p>
+<p>Ultimately, the “Prep Ensembles” button will create an “ensemble-data.csv” file in each <strong>obs-##</strong> folder that will have all of the individual forwards and backwards extended events that was constructed with the selected parameters described below in one file in long format.</p>
+<p>This step usaully takes the most time computationally as it involved reading in every single “trap-data.csv” file, extracting the events, and writing the synchronized events back to the folder.</p>
+<p><strong>NOTE:</strong> Only observations that were <strong>included</strong>, analyzed as <strong>success</strong>, and whose <strong>review</strong> marked as TRUE will be included in the ensemble averages. Additionally, if the observation passes that first check then any events that were user excluded will be filtered out. Each time you re-prep your ensembles, all existing “ensemble-data.csv” files are <strong>ERASED</strong> and the data is re-read and prepped again. This allows the user to go back and exclude a trace or event from analysis and re-prep without leaving old straggling files behind.</p>
+<div id="extending-forward" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Extending Forward<a href="ensemble-average.html#extending-forward" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The goal with the forward ensemble average is to align the beginning of the events and “stretch” the ends of the short events to be equal to the longest event in time. The app lets the user choose how much (or little) time to use to extend the event. A 3ms “Avg of ms to extend forward” (I should probably come up with better names for these parameters) value means the position of the last 3ms of an events will be averaged and that resulting average value will be used (repeated) to extend the event out. The window size you select would probably be dependent on [ATP]. The higher the [ATP] the lower the window should be to decrease the likelihood of averaging pre-hitch (d1) displacement position. Whereas, at high [ATP] myosin will spend a longer time in a post-hitch (d2) final displacement position waiting for ATP to induce dissociation so you can be less aggressive in the size of the window in attempts to truly capture the average of that final d2 displacement.</p>
 </div>
-</div>
-<div id="extending-backwards" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Extending Backwards</h2>
+<div id="extending-backwards" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Extending Backwards<a href="ensemble-average.html#extending-backwards" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Similar idea of the forwards, but for the backward ensemble average the goal is to capture the average position signal of the d1 pre-hitch position signal to extend the events. However, this is a little tricky. The changepoint algorithm used identifies the transition period going from un-bound to bound as a part of the event. This is the very brief period in time where the bead is moving through solution as it is displaced from the center of the trap. As a result, even though these datapoint are considered part of the event, they are not a true representation of the post-powerstroke/pre-hitch d1 position. The app gives the option to “skip” into the event before performing an average in effort to try to avoid averaging in these transition points. The “Number of ms to skip before s1 avg” (again not a catchy name…) lets the user decide how many ms to skip into each event before averaging. Similarly, the “Avg of ms to extend s1 backwards” allows the user to select how many ms to include in the average after skipping ahead.</p>
+</div>
+</div>
+<div id="average-fit-ensembles" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Average &amp; Fit Ensembles<a href="ensemble-average.html#average-fit-ensembles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once the ensembled are prepped they can then be averaged and optionally fit with an exponential curve. The options allow the user to select the maximum amount of data to plot and whether to fit a single, double, or no exponential to the data. This part is relateively strighforward, just click “Avg Ensembles”. Averaging the ensmbles will automatically save the fit parameters under “lasertrapr/project/summary”.</p>
+</div>
+<div id="plot-ensembles" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Plot Ensembles<a href="ensemble-average.html#plot-ensembles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After the ensembles are averaged and optionally fit, you can navigate to the “Plot Options” tab to activate the graph. Prior to activating this tab only the Forward/Backwards Fit Parameter tables will be view-able.</p>
+<p>Within the app, there is a limited selection of plot customizations that allow the user to tweak the appearance of the plot. You can provide custom labels to the facets, change facetting directions, shift the backwards ensembls undernearth the forwards to save on space, change theme size, along with some other minor features. Plots can be saved with “Save Plot” and figures are saved under the selected project folder inside “lasertrapr/project/summary/figures”.</p>
+<p><strong>NOTE:</strong> In order to get the custom labels to work you must select a factor order.</p>
+</div>
+<div id="tldr-3" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> tl;dr<a href="ensemble-average.html#tldr-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Just show me a video…</p>
+<video width="800" height="400" controls>
+<source src="images/ensemble-average.mp4" type="video/mp4">
+<p>Your browser does not support the video tag.
+</video></p>
 
 </div>
 </div>
@@ -234,8 +263,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="analyzers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="summarize.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="summarize.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figures.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
